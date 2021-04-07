@@ -2,7 +2,7 @@ package it.polito.tdp.librettovoti;
 
 import java.net.URL;
 import java.time.LocalDate;
-import java.time.format.DateTimeParseException;
+//import java.time.format.DateTimeParseException;
 import java.util.ResourceBundle;
 
 import it.polito.tdp.librettovoti.model.*;
@@ -74,6 +74,7 @@ public class FXMLController {
     	
     	//Aggiorna i risultati (nella View)
     	txtResult.setText(model.toString());
+    	txtResult.appendText("Voti corretti:\n" + model.toStringMigliorato());
     	txtEsame.clear();
     	txtVoto.clear();
     	//txtData.clear();

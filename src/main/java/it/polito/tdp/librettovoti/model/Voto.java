@@ -28,6 +28,12 @@ public class Voto {
 		this.data = data;
 	}
 
+	public Voto(Voto v) {
+		this.nome = v.getNome();
+		this.voto = v.getVoto();
+		this.data = v.getData();
+	}
+
 	public String getNome() {
 		return nome;
 	}
